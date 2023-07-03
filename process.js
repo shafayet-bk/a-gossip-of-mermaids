@@ -49,7 +49,7 @@ const clickListener = (e) => {
   while (node.nodeName !== "svg") {
     node = node.parentNode;
   }
-  console.log("Node:", node);
+  writeLog("Clicked on node:", node);
 
   popInnerEl.innerHTML = "";
   let nodeClone = node.cloneNode(true);
